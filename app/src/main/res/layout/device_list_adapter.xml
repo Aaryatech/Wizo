@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/llCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBulb"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/detail_light_icon"
+                    android:transitionName="image" />
+
+
+                <TextView
+                    android:id="@+id/tvCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Device One"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:transitionName="caption" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+
+                android:gravity="end">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgFan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <RadioButton
+                android:id="@+id/rb0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="0"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/rb25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="25"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/white"
+                />
+            <RadioButton
+                android:id="@+id/rb50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="50"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/rb75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="75"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/white"
+                />
+            <RadioButton
+                android:id="@+id/rb100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="100"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/white"
+                />
+
+
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/sbValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="26dp"
+            android:max="@string/fan_speed"
+            android:thumb="@drawable/circle_thumb"
+            android:progressBackgroundTint="@color/appblue"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:id="@+id/sbDimmer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="26dp"
+            android:max="@string/dimmer_1_speed"
+            android:thumb="@drawable/circle_thumb"
+            android:progressBackgroundTint="@color/appblue"
+            android:visibility="gone"
+            />
+
+        <SeekBar
+            android:id="@+id/sbDimmer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="26dp"
+            android:max="@string/dimmer_2_speed"
+            android:thumb="@drawable/circle_thumb"
+            android:progressBackgroundTint="@color/appblue"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

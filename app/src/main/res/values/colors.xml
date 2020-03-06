@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00000000</color>
+    <color name="colorPrimaryDark">#23262b</color>
+    <color name="colorAccent">#14D2AE</color>
+    <color name="grey">#838383</color>
+    <color name="appGreen">#14D2AE</color>
+    <color name="appblue">#0091E1</color>
+    <color name="error">#FFEA5E5B</color>
+
+
+    <color name="appTheme">#515761</color>
+    <color name="colorTransBg">#85000000</color>
+
+  <!--  <color name="switch_thumb_material_dark">#85000000</color>
+    <color name="abc_background_cache_hint_selector_material_light">#85000000</color>
+    <color name="abc_primary_text_material_light">#85000000</color>
+    <color name="abc_hint_foreground_material_light">#85000000</color>
+    <color name="abc_hint_foreground_material_dark">#85000000</color>
+    <color name="abc_secondary_text_material_light">#85000000</color>
+    <color name="abc_secondary_text_material_dark">#85000000</color>
+    <color name="abc_primary_text_disable_only_material_dark">#85000000</color>
+    <color name="abc_primary_text_material_dark">#85000000</color>
+    <color name="abc_background_cache_hint_selector_material_dark">#85000000</color>
+    <color name="abc_btn_colored_borderless_text_material">#85000000</color>
+    <color name="abc_btn_colored_text_material">#85000000</color>
+-->
+</resources>

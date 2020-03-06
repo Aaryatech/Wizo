@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@mipmap/splash_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.ManualConfigurationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/edSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/sofiapro_light"
+                android:hint="Home Router Name"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/edHomeRouterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/sofiapro_light"
+                android:hint="Password"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/edChannel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/sofiapro_light"
+                android:hint="Channel"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="6"
+                android:textColor="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textColorHint="@android:color/white"-->
+        <!--&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/edIpAddress"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--android:background="@drawable/edittext_style"-->
+        <!--android:fontFamily="@font/sofiapro_light"-->
+        <!--android:hint="IP Address"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:singleLine="true"-->
+        <!--android:imeOptions="flagNoExtractUi"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--/>-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <RelativeLayout
+
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_style"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spRoom"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:autofillHints="Select Room"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:src="@mipmap/ic_drop_down_arrow" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnConfigure"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/sofiapro_bold"
+            android:padding="10dp"
+            android:text="Send Channel Info"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyButton" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

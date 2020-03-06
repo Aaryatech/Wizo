@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.ats.wizo.activity.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/sofiapro_light"
+                android:hint="Mobile No"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/iLOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@android:color/white">
+
+            <EditText
+                android:id="@+id/edOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/sofiapro_light"
+                android:hint="@string/hint_otp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/sofiapro_bold"
+        android:padding="10dp"
+        android:text="Send OTP"
+        android:textColor="@android:color/white"
+        android:theme="@style/MyButton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sofiapro_light"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_button_style"
+        android:fontFamily="@font/sofiapro_bold"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:theme="@style/MyButton" />
+
+
+    <TextView
+        android:id="@+id/tvDemoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sofiapro_light"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="DEMO LOGIN"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+

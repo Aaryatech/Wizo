@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_above="@id/llButton"
+        android:id="@+id/ivInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/info_screen_3" />
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnOrderNow"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:text="ORDER NOW"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/green_button_style"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ats.wizo.activity.AddNewRoomActivity"
+    tools:showIn="@layout/activity_add_new_room">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:text="Enter Room Name"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/etRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/sofiapro_light"
+        android:inputType="textCapWords"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:text="Select Room Type"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/rgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/rbLiving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableLeft="@mipmap/living_room_icon"
+                android:drawablePadding="10dp"
+                android:text="Living Room"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@mipmap/bedroom_icon"
+                android:drawablePadding="10dp"
+                android:text="Bedroom"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbMBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@mipmap/master_bedroom_icon"
+                android:drawablePadding="10dp"
+                android:text="Master Bedroom"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbKitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@mipmap/kitchen_icon"
+                android:drawablePadding="10dp"
+                android:text="Kitchen"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAddNewRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/sofiapro_bold"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

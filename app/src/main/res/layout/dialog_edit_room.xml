@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:focusable="auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/appTheme" >
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Room"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_style"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:textColor="@color/white"
+        android:hint="Enter Caption"
+        android:textColorHint="@color/white"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="Delete Room"
+            android:background="@android:color/transparent"
+            android:textColor="@color/appblue" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Update"
+        android:background="@android:color/transparent"
+        android:textColor="@color/appblue" />
+    </LinearLayout>
+
+</LinearLayout>

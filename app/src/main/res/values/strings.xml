@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Wizzo</string>
+
+    <string name="hint_otp">OTP</string>
+    <string name="Reboot">Reboot</string>
+    <string name="Reset">Reset</string>
+    <color name="white">#fafafa</color>
+
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="ok">OK</string>
+    <string name="go_to_wifi_setting">Go To Wi-Fi Setting</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pick_image">Select Image</string>
+    <string name="title_activity_add_new_room">AddNewRoomActivity</string>
+    <string name="title_activity_profile"></string>
+    <string name="info">Use this option only if -\n\n1) You have changed your Home Router.\n\n2) You have changed SSID/Password of your Home Router.\n\n</string>
+    <string name="steps">Follow these steps.\n\n1) Switch ON your Home Router &amp; make sure it is working properly.\n\n2)Stand near to Wizzo device to be reconfigured.\n\n3)Make sure device is powered ON &amp; wait for 5 minutes than device name will be reflected in mobile WiFi list.\n\n4)Reconfiguration may take 5-10 minutes &amp; you can not interrupt process once started.
+    </string>
+    <string name="pwd">Password</string>
+    <string name="selected_count">Selected</string>
+    <string name="title_activity_mood_scheduler">MoodSchedulerActivity</string>
+    <string name="instructions">1. Your home router is ON &amp; internet connectivity is GOOD  \n\n 2. You have home router\'s CASE SENSITIVE PASSWORD with you   \n\n 3. Wizzo device is installed PROPERLY, as per given connection diagram*  \n\n 4. ONLY ONE Wizzo device is powered ON at the time of installation  \n\n 5. In your mobile WiFi list you can see SINGLE Wizzo WiFi device*  \n\n 6. Follow instructions on each screen for faster configuration</string>
+    <string name="iAgree">I have checked &amp; ready to Continue</string>
+
+    <string name="see_online">see online <a href="http://www.wizzo.co.in"></a></string>
+    <string name="subtitle_wizzo_search"> It may take few minutes depending on your Mobile phone Model, OS, Internet speed.</string>
+    <string name="msg_wizzo_searching">1. Stay On Screen - Don\'t let Wizzo App go in Background
+\n\n2. Please keep your wizzo device and mobile in close vicinity while configuration is going on
+</string>
+    <string name="tool_wizzo_searching">If it takes too long then\n\n1. Close App COMPLETELY (from background) \n\n2. Repeat Configuration Process.</string>
+    <string name="msg_caution_config">1. Stay On Screen - Don\'t let Wizzo App go in Background\n\n2. Keep your Mobile, Home Router &amp; Wizzo Device is in close vicinity\n\n3. Home Router should have uninterrupted Internet
+</string>
+    <string name="troubleshoot_config">If app ask your to repeat then \n\n1. Switch OFF &amp; ON Wizzo Device Immediately after Pressing Repeat Button.\n\n2. Continue doing this till Wizzo Device Get Confiure &amp; Navigate to Home Screen.</string>
+
+
+    <string name="fan_speed">5</string>
+    <string name="dimmer_1_speed">100</string>
+    <string name="dimmer_2_speed">100</string>
+
+</resources>

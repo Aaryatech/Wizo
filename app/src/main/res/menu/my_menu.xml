@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/synch"
+        android:title="Synch" />
+
+    <item android:id="@+id/registerToServer"
+        android:title="Upload" />
+
+   <!-- <item android:id="@+id/delete_data"
+        android:title="Delete All Data" />
+    <item android:id="@+id/changePwd"
+        android:title="Change Password" />
+-->
+</menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_style"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivBulb"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/detail_light_icon"
+            android:transitionName="image" />
+
+        <TextView
+            android:id="@+id/tvCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Device One"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:transitionName="caption" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/ivEditCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_margin="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/edit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/llConstant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/llHeader"
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/schedule_on_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAN SCHEDULER"
+        android:textColor="@color/white"
+        android:layout_margin="2dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+    <ListView
+        android:layout_below="@id/llConstant"
+        android:id="@+id/lvFanSch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/rlFab"
+/>
+
+    <RelativeLayout
+        android:id="@+id/rlFab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginBottom="5dp"
+            android:id="@+id/fabFanScheduler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            app:backgroundTint="@color/appblue"
+            app:background="@color/appblue"
+            app:srcCompat="@mipmap/ic_add"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

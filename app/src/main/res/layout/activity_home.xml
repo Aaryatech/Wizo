@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ats.wizo.activity.HomeActivity">
+
+    <include layout="@layout/content_home" />
+
+    <View
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransBg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="23dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/standard_12"
+        android:visibility="gone"
+        app:layout_behavior="com.ats.wizo.util.MoveUpwardBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabNew"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="center"
+                app:background="@color/appblue"
+                app:backgroundTint="@color/appblue"
+                app:fabSize="mini"
+                app:srcCompat="@mipmap/new_device_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="New Configuration"
+                android:background="@drawable/button_style"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabExisting"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="center"
+                app:background="@color/appGreen"
+                app:backgroundTint="@color/appGreen"
+                app:fabSize="mini"
+                app:srcCompat="@mipmap/existing_device_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Reconfiguration"
+                android:textColor="@android:color/white"
+                android:background="@drawable/green_button_style"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12"
+        app:layout_behavior="com.ats.wizo.util.MoveUpwardBehavior">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:src="@mipmap/ic_add"
+            app:backgroundTint="@color/appblue"
+            app:fabSize="normal"
+            app:layout_behavior="com.ats.wizo.util.MoveUpwardBehavior"
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

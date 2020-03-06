@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".activity.AddNewMoodActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:text="Enter Mood Name"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/etMoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/sofiapro_light"
+        android:inputType="textCapWords"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:text="Select Multiple Switches"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rvMoodDevice"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvMoodDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnCreate"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp" />
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnCreate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style"
+            android:text="CREATE"
+            android:textColor="@color/white"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:keepScreenOn="true"
+    tools:context="com.ats.wizo.activity.SelectHomeRouterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Select Device To Reconfigure"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/ivRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/refresh" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="@android:color/black"
+        android:text="No Wizzo Device Found, Press Refresh To Try Again"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:paddingTop="20dp"
+
+        />
+    <ListView
+        android:id="@+id/lvWizoDevices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none" />
+
+
+    <Button
+        android:id="@+id/btnReconfigure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_style"
+        android:text="Reconfigure Wizzo"
+        android:textColor="@color/white"
+
+        />
+</LinearLayout>
